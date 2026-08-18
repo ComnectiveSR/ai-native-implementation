@@ -1,0 +1,10 @@
+.env
+.env.*
+*.key
+*.pem
+secrets/
+private/
+raw-data/
+client-data/
+*.xlsx
+*.csv
