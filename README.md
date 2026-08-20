@@ -2,7 +2,9 @@
 
 I turn ambiguous operational problems into verifiable working systems.
 
-This repository is a public, sanitized evidence layer for my work under **Comnective Sphere Resources** and related implementation projects. It is designed for hiring managers and clients who want to see shipped work, technical judgment, verification discipline, and clear limits — not generic claims of being “AI-native”.
+This repository is a public, sanitized evidence layer for work I completed during my current self-employed period under **Comnective Sphere Resources** and related implementation projects. I am **Wei Sheng Lee**, the owner/operator of Comnective Sphere Resources. The repository stays under the `ComnectiveSR` account to preserve project provenance and continuity with the source repositories; it is not presented as work by an unrelated employer or team.
+
+It is designed for hiring managers and clients who want to inspect shipped work, implementation judgment, verification discipline, and clear limits — not generic claims of being “AI-native”.
 
 ## 60-second proof
 
