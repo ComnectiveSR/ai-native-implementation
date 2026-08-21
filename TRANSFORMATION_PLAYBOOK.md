@@ -1,191 +1,116 @@
-# Transformation Playbook
+# Workflow Transformation Diagnostic — Public Preview
 
-A reusable method for converting a messy operating workflow into a bounded, measurable implementation.
+This page shows enough of my operating method for a hiring manager or prospective client to understand how I approach transformation work.
 
-This is not a claim that every step has already been sold as a consulting product. It is the operating method derived from shipped and in-progress implementation work in this repository.
+It is intentionally **not** the full commercial delivery playbook. Detailed scoring logic, discovery prompts, qualification thresholds, implementation templates, commercial assumptions, customer-specific decision rules, and internal operating assets are retained for live engagements.
 
-## 1. Start from the workflow, not the tool
+The principle is simple:
 
-Capture:
+> Start with the operating problem. Measure the loss. Improve the system. Use AI only where it creates positive expected value. Verify the result before scaling.
 
-- where work enters;
-- who touches it;
-- what information is required;
-- where handoffs occur;
-- what is repeated;
-- what fails;
-- what must remain human-controlled;
-- how completion is proven.
+## 1. Map the real workflow
 
-Do not start with an AI feature list.
+Capture where work enters, who touches it, where handoffs occur, what information is required, where rework happens, what fails, and how completion is currently proven.
+
+Do not begin with an AI feature list.
 
 ## 2. Quantify the current loss
 
-Measure what can be measured:
+Estimate the material consequence of the current workflow, such as:
 
-- hours per week;
-- wait time;
+- staff hours consumed;
+- waiting time;
 - rework;
 - error frequency;
-- support volume;
+- support burden;
 - missed revenue;
 - cost of delay;
 - compliance or operational risk.
 
-If the problem cannot be connected to a material cost, risk, or customer outcome, it is usually not the first problem to automate.
+A problem with no meaningful economic, customer, or risk consequence is usually not the first problem to automate.
 
-## 3. Separate buyer, user, and owner
+## 3. Identify buyer, user, owner, and affected party
 
-For each workflow identify:
+A technically correct system can still fail when incentives or accountability are unclear.
 
-- **Buyer:** who approves money or resources;
-- **User:** who performs the work;
-- **Owner:** who is accountable for the result;
-- **Affected party:** who carries downside if the system is wrong.
+For every workflow, identify who pays, who uses the process, who owns the outcome, and who carries the downside when it fails.
 
-Misalignment here is a common reason technically correct systems fail to get adopted.
+## 4. Define what good looks like before building
 
-## 4. Define the outcome before the solution
-
-Write one measurable target.
+Set one measurable improvement target and the conditions that must not become materially worse.
 
 Example:
 
-> Reduce manual exception triage from 6 hours per week to under 2 hours without increasing unresolved-error rate above the agreed threshold.
+> Reduce manual exception triage while holding unresolved-error rate below the agreed threshold.
 
-Then define what must not break.
+The exact target, baseline and guardrails must be established from real operating evidence.
 
-## 5. Rank intervention options by expected value
+## 5. Choose the smallest useful intervention
 
-Compare options using:
+The right answer may be:
 
-- success probability;
-- upside;
-- implementation time;
-- required resources;
-- operational risk;
-- reversibility;
-- future reuse.
+- remove a step;
+- clarify ownership;
+- redesign a form;
+- standardise an input;
+- add a deterministic rule;
+- connect two systems;
+- add AI assistance;
+- automate a bounded task;
+- or leave the step human-controlled.
 
-The best answer may be process redesign, a rule, a form, an integration, a script, an AI-assisted step, or full automation.
+The goal is not maximum automation. It is maximum expected value after implementation cost, failure risk, adoption friction and ongoing operating cost.
 
-## 6. Choose the smallest meaningful test
+## 6. Build within explicit authority boundaries
 
-The first implementation should be large enough to produce decision-grade evidence and small enough to reverse.
+Before implementation, decide what the system may read, suggest, write, approve, send, delete or escalate.
 
-Define:
+High-impact actions need named human accountability, review thresholds, logging, escalation and rollback.
 
-- exact scope;
-- permitted systems/files;
-- expected proof;
-- stop condition;
-- rollback boundary.
+## 7. Verify the real user outcome
 
-Do not expand scope because an adjacent opportunity looks interesting.
+Evidence may include tests, logs, screenshots, endpoint probes, reconciliation against source data, operator walkthroughs, before/after measurements and user acceptance.
 
-## 7. Set primary and guardrail metrics before launch
+**Built ≠ working. Working ≠ usable. Usable ≠ valuable.**
 
-### Primary metric
+## 8. Decide: scale, refine or stop
 
-What should improve?
+A bounded test should end with a business decision, not an endless improvement loop.
 
-Examples:
+Scale only when evidence supports it. Otherwise refine, hold, roll back or kill the intervention.
 
-- completion time;
-- conversion;
-- error rate;
-- cases processed;
-- support load;
-- revenue per workflow.
+## What a first diagnostic produces
 
-### Guardrails
+A first engagement should leave the customer with a decision-ready summary rather than an AI demo.
 
-What must not become materially worse?
-
-Examples:
-
-- error severity;
-- AOV or margin;
-- response latency;
-- support tickets;
-- unresolved exceptions;
-- privacy exposure;
-- user adoption;
-- manual recovery time.
-
-Set rollback thresholds before seeing results.
-
-## 8. Implement with explicit authority boundaries
-
-Decide what the system may:
-
-- read;
-- suggest;
-- write;
-- approve;
-- send;
-- delete;
-- escalate.
-
-Consequential actions should not be delegated implicitly.
-
-## 9. Verify the actual failure path
-
-Verification may include:
-
-- automated tests;
-- live endpoint probes;
-- screenshots;
-- logs;
-- structured UI state;
-- negative tests;
-- operator walkthroughs;
-- reconciliation against source evidence.
-
-A build passing is not the same as the workflow working.
-
-## 10. Handover an operable system
-
-Leave behind:
-
-- operating steps;
-- owner;
-- exception path;
-- failure and rollback procedure;
-- metric definitions;
-- evidence location;
-- known limitations;
-- next review point.
-
-The implementation is not complete if only the builder can operate it.
-
-## 11. Decide what happens next
-
-After the test, choose one:
-
-- scale;
-- refine;
-- hold;
-- roll back;
-- kill.
-
-Use actual evidence. Do not keep a project alive because of sunk cost.
-
-## Compact diagnostic output
-
-A useful first engagement can produce one page with:
-
-| Field | Output |
+| Output | Purpose |
 |---|---|
-| Workflow | Exact process being examined |
-| Current loss | Time, money, error, delay, or risk |
-| Buyer / user / owner | Named roles |
-| Bottleneck | Highest-value failure point |
-| Proposed intervention | Smallest useful change |
-| Primary metric | What should improve |
-| Guardrails | What must not get worse |
-| Proof | Test, log, screenshot, reconciliation, or live result |
-| Rollback | How to reverse safely |
-| Next decision | Scale / refine / stop |
+| Workflow map | Shows the current operating path |
+| Baseline loss | Quantifies time, money, delay, error or risk |
+| Bottleneck | Identifies the highest-value failure point |
+| Buyer / user / owner map | Makes accountability and adoption explicit |
+| Intervention options | Separates process, rule, integration and AI choices |
+| Expected-value case | Tests whether improvement is worth implementing |
+| Primary metric + guardrails | Defines what good looks like and what must not break |
+| Proof plan | States how the result will be verified |
+| Next decision | Implement / pilot / hold / stop |
 
-This structure can be used for internal transformation work, implementation consulting, solution delivery, AI adoption, and SME workflow improvement.
+## Free-filter → paid implementation model
+
+The public diagnostic can be used as a low-friction qualification layer before implementation work:
+
+1. **Free workflow screen** — determine whether a material repeated problem exists.
+2. **Decision-grade diagnostic** — establish baseline, bottleneck, economics, risks and implementation options.
+3. **Bounded pilot** — test the highest-EV intervention on a controlled slice.
+4. **Implementation** — integrate the proven change into the operating workflow.
+5. **Measurement and handover** — verify cost, revenue, speed, quality or risk impact and make the process operable without the builder.
+
+The diagnostic is useful even when the correct answer is **do not automate**.
+
+## What remains private
+
+The public repository proves judgment and implementation discipline. It does not publish the full commercial system.
+
+Private engagement assets include detailed discovery scripts, scoring weights, qualification thresholds, pricing logic, customer-specific economics, internal prompts, reusable implementation templates, account-specific data mappings, security details and proprietary delivery shortcuts.
+
+A buyer should be able to understand **how I think and what evidence I require** without receiving every implementation asset required to reproduce the service independently.
