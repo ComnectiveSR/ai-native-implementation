@@ -2,7 +2,7 @@
 
 I turn ambiguous operational problems into controlled, testable working systems.
 
-This repository is the public evidence layer for implementation work completed during my self-employed period under **Comnective Sphere Resources** and related delivery projects. I am **Wei Sheng Lee**, the owner/operator of Comnective Sphere Resources. The repository remains under `ComnectiveSR` to preserve project provenance and continuity with the source work.
+This repository is a **selective public proof layer** for implementation work completed during my self-employed period under **Comnective Sphere Resources** and related delivery projects. It is not a dump of every method, template, prompt, customer artifact, or commercial decision rule I use.
 
 It is built for hiring managers and clients who want to answer one question quickly:
 
@@ -17,7 +17,7 @@ It is built for hiring managers and clients who want to answer one question quic
 | **Real fault diagnosis** | MNavi provider-status failure: traced a frontend/backend contract mismatch, corrected the bounded interface, then re-tested the exact failure path. See `case-studies/MNAVI.md`. |
 | **Verification discipline** | Endpoint tests **2/2 PASS**, component tests **11/11 PASS**, lint **PASS**, live backend probe **HTTP 200**, plus a negative secret-exposure check. See `evidence/MNAVI_PROVIDER_STATUS_REPAIR.md`. |
 | **Operational judgment** | `HOW_I_WORK_WITH_AI.md` shows what I delegate to AI and what remains human-owned: problem selection, scope, acceptance, trade-offs, privacy, authority, and ship/no-ship decisions. |
-| **Reusable method** | `TRANSFORMATION_PLAYBOOK.md` converts the work pattern into a repeatable workflow-diagnostic and implementation method that can be applied to customer operations. |
+| **Reusable commercial logic** | `TRANSFORMATION_PLAYBOOK.md` shows the public-facing Workflow Transformation Diagnostic: workflow → loss → bottleneck → economics → bounded intervention → proof → scale/refine/stop. Detailed commercial execution assets remain private. |
 
 ## What I can be used for
 
@@ -54,15 +54,7 @@ I am not trying to compete as a frontier ML researcher or senior software archit
 
 This is a live product, not a mock-up.
 
-Evidence includes:
-
-- real users;
-- guest and admin flows;
-- deployment and release work;
-- accessibility checks;
-- live-friction fixes;
-- change requests after use;
-- public source code.
+Evidence includes real users, guest and admin flows, deployment and release work, accessibility checks, live-friction fixes, change requests after use, and public source code.
 
 Live product: https://wilchi-weddinginvitation.pages.dev/  
 Source: https://github.com/ComnectiveSR/wilchi-wedding-invitation
@@ -81,53 +73,27 @@ See `case-studies/MNAVI.md` and `evidence/MNAVI_PROVIDER_STATUS_REPAIR.md`.
 
 ### 3. Work-in-progress control patterns — TaxMY / InvoisMY
 
-TaxMY and InvoisMY are **not presented as completed production products**.
+TaxMY and InvoisMY are **not presented as completed production products or customer outcome proof**.
 
-Their useful evidence is narrower: they show how I structure evidence, validation, exception handling, human review, authority boundaries, and acceptance criteria in compliance-sensitive workflows.
+Their useful evidence is narrower: structuring source evidence, deterministic validation, exception handling, human approval, authority boundaries, truthful lifecycle states, and acceptance criteria in compliance-sensitive workflows.
 
-They should be treated as work-in-progress implementation patterns, not as customer outcome proof.
+These cases are relevant when a role cares about implementation governance. They are not used to inflate shipped-product claims.
 
-## Reusable transformation package
+## Workflow Transformation Diagnostic
 
-The repository now includes `TRANSFORMATION_PLAYBOOK.md`.
+`TRANSFORMATION_PLAYBOOK.md` is the public preview of a reusable diagnostic and implementation funnel:
 
-It converts the proof into a practical engagement pattern:
+**free workflow screen → decision-grade diagnostic → bounded pilot → implementation → measurement and handover**
 
-1. map the current workflow;
-2. quantify time, error, delay, risk, and revenue/cost impact;
-3. identify the buyer, user, and owner;
-4. rank intervention options by expected value and implementation risk;
-5. define the smallest paid or production-relevant test;
-6. implement inside an explicit scope boundary;
-7. set primary and guardrail metrics before launch;
-8. verify the result with tests, logs, screenshots, or operating evidence;
-9. document the handover and next decision.
+The diagnostic is designed to answer whether a workflow actually deserves investment before tools or agents are added.
 
-That method is intended to be reused for internal transformation teams, implementation consulting, solution delivery, and SME workflow improvement.
+Public proof shows the reasoning pattern. Detailed scoring logic, qualification thresholds, discovery scripts, implementation templates, customer-specific economics, pricing logic, security details, prompts and proprietary delivery shortcuts remain private.
 
 ## AI versus human responsibility
 
-AI assists:
+AI assists research, first-pass specifications, implementation support, testing, debugging, documentation, and option generation.
 
-- research;
-- first-pass specifications;
-- implementation support;
-- testing;
-- debugging;
-- documentation;
-- option generation.
-
-I retain responsibility for:
-
-- problem selection;
-- customer and business context;
-- scope and stop conditions;
-- acceptance criteria;
-- economics and trade-offs;
-- privacy and authority boundaries;
-- guardrail selection;
-- final verification;
-- ship/no-ship decisions.
+I retain responsibility for problem selection, customer and business context, scope and stop conditions, acceptance criteria, economics and trade-offs, privacy and authority boundaries, guardrail selection, final verification, and ship/no-ship decisions.
 
 See `HOW_I_WORK_WITH_AI.md`.
 
@@ -147,7 +113,15 @@ For a live discussion, use `demo/FIVE_MINUTE_SCREEN_SHARE.md`.
 
 I do **not** present myself as a senior ML engineer, enterprise architect, or frontier-model researcher.
 
-My target roles are customer-facing **AI implementation, digital transformation, solution delivery, implementation consulting, technical operations, AI adoption, and governance execution** roles where technical understanding, stakeholder communication, commercial judgment, and verification matter together.
+My target roles are customer-facing **AI implementation, digital transformation, solution consulting / pre-sales, implementation consulting, technical operations, AI adoption, and governance execution** roles where technical understanding, stakeholder communication, commercial judgment, and verification matter together.
+
+## Public-sharing rule
+
+This repository is public by design, but only selected proof belongs here.
+
+Do not publish customer-confidential material, private operating data, credentials, proprietary client deliverables, unredacted proposals, sensitive economics, reusable internal commercial assets, or anything that I do not own or have permission to share.
+
+The objective is to make judgment inspectable — not to give away the entire service.
 
 ## Contact
 
