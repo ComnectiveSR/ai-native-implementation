@@ -30,5 +30,8 @@ When changing an operating process, I require a named owner, baseline, new path,
 ## 10. Message the transition, not the information volume
 For offers and positioning, I lead with the observable job-to-be-done, pain removed, time/risk reduced or capability gained. Emotional identity language can support the message, but it cannot replace proof. In B2B, the default sequence is consequence -> next state -> evidence -> bounded next action.
 
-## 11. Record learning without creating a backlog
+## 11. Keep career artifacts source-controlled
+Resume variants, LinkedIn positioning, application answers and interview stories must derive from one evidence source. Keep a stable public LinkedIn identity and a stable general-market resume for the primary role family; tailor application resumes by changing emphasis, ordering and job-language fit, not facts. Dates, employers, titles, scope and verified outcomes must remain consistent. Do not invent a metric or capability to improve keyword match.
+
+## 12. Record learning without creating a backlog
 A project should leave a reusable primitive: a skill, test, template, architecture pattern, checklist or decision rule. A new tool, article or case study creates a hypothesis, not an automatic project.
