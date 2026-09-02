@@ -23,19 +23,22 @@ A task is not complete because an agent reports PASS. Use the proof appropriate 
 ## 7. Preserve authority boundaries
 Never hardcode or expose secrets. Do not perform unsupervised sends, deployments, payments, destructive writes or other consequential external actions unless the current task explicitly authorizes them. Keep human approval where consequence or reversibility requires it.
 
-## 8. Run the closed loop
+## 8. Qualify commercial automation before building it
+For lead-generation, outbound, CRM or sales-agent work, define the ICP, decision-maker, data source, allowed channels, compliance/privacy boundary, current baseline, success metric, budget, ownership, follow-up policy and stop condition before selecting tools. Do not claim experience with an unverified stack. Do not automate high-volume outreach merely because the tools support it, and do not send externally without explicit authorization.
+
+## 9. Run the closed loop
 Observe -> Quantify -> Decide -> Implement -> Verify -> Handover.
 
 When verification fails, fix the first observed failure and its adjacent regression, then re-run the exact failing path. Do not respond to failure with conceptual redesign unless the evidence changes a governing constraint.
 
-## 9. Measure operating value
+## 10. Measure operating value
 For workflow changes, preserve a named owner, baseline, new operating path, operating measure, outcome measure, quality guard and stop or rollback condition. Do not describe estimated impact as verified ROI.
 
-## 10. Protect expected-value discipline
+## 11. Protect expected-value discipline
 If a task concerns a lead, offer, partnership, job or commercial opportunity, do not optimize for headline revenue alone. Surface evidence strength, access/warmth, cash probability, strategic fit, repeatability, delivery burden, scope risk, payment quality, reversibility and learning/career capital. Preserve a power-law exception only when downside is bounded and information gain is high.
 
-## 11. Keep claims buyer-observable
+## 12. Keep claims buyer-observable
 For business-facing copy, prefer measurable transition language: consequence, pain removed, time/risk reduced, capability gained, proof and next action. Avoid identity-heavy or emotional claims that are not observable or falsifiable.
 
-## 12. Promote learning only after verification
+## 13. Promote learning only after verification
 Record only durable learning that has earned promotion into a test, skill, template, checklist, architecture pattern or decision rule. Tool discovery and internet case studies are inputs to evaluate, not backlog items.
