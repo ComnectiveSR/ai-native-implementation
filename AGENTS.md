@@ -22,6 +22,8 @@ A task is not complete because an agent reports PASS. Use the proof appropriate 
 
 For serious AI or agentic work, establish an Outcome Evidence Harness before claiming readiness: representative tasks, baseline, explicit success criteria, balanced positive/negative cases, multiple trials when outputs are stochastic, saved traces, outcome graders and a regression suite for previously solved cases. Material production failures must be added as regression cases.
 
+Every eval record must identify the full execution configuration, not only the model name: model/version, effort or sampling settings when relevant, system and task prompts, tools/permissions, harness or agent scaffold, context/memory state, compaction/retrieval settings, environment/version, grader version and trial count. Do not attribute a score change to the model when the harness or configuration changed.
+
 ## 7. Validate instrumentation before interpreting metrics
 Before using product, funnel, model or business metrics, check nulls, duplicates, time ranges/time zones, joins, event definitions, sampling, deduplication and logging completeness. Do not optimize a system against a metric until the data-generating path is verified.
 
