@@ -50,3 +50,9 @@ In interviews, diligence is context-first and politically safe. Do not lead with
 
 ## 17. Make public proof a distribution layer, not a new project
 A portfolio or company website is justified only when it makes existing verified work easier for employers or buyers to understand. Keep it lean: a small number of evidence-backed case studies using problem -> constraints -> role -> implementation -> verification -> measured result or learning, plus resume/LinkedIn/GitHub/contact. Do not imply clients, scale, revenue, team size or ROI that is not evidenced. If the site starts competing with applications, customer discovery or paid delivery, stop polishing it.
+
+## 18. Route model effort by the cost of being wrong
+Use the strongest justified reasoning/review capability for architecture, strategy, adversarial review, ambiguous requirements and decisions where a wrong answer creates large rework or risk. Use cheaper or faster models for well-specified execution once the acceptance contract is clear. This is a workload-routing rule, not loyalty to any named model. Benchmark the actual task when the choice matters.
+
+## 19. Keep private memory and public proof separated by a release gate
+Life, family, finance and other private canonical context must not leak into company, portfolio, recruiter or customer-facing memory. Maintain a private evidence source and deliberately release only sanitized, necessary proof into public/shared artifacts. Shared systems get the minimum context required for the work; public case studies are exports, not mirrors of the private Life OS.
