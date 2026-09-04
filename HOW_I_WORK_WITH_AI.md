@@ -44,3 +44,9 @@ A reflective framework may help surface behavioral risks or compare genuinely av
 
 ## 15. Record learning without creating a backlog
 A project should leave a reusable primitive: a skill, test, template, architecture pattern, checklist or decision rule. A new tool, article or case study creates a hypothesis, not an automatic project.
+
+## 16. Diagnose the workplace before challenging it
+In interviews, diligence is context-first and politically safe. Do not lead with questions about promotion, skip-level access, overload, responsibility boundaries or escalation before understanding how the team actually operates. First learn a normal engagement or account, how work moves through the team, where this role creates value, how priorities are coordinated and what earns trust. Infer manager quality, workload, support and progression from concrete examples, then ask sharper follow-ups only when the conversation naturally opens that topic. The objective is to reduce mutual hiring risk without signalling threat, entitlement or responsibility avoidance.
+
+## 17. Make public proof a distribution layer, not a new project
+A portfolio or company website is justified only when it makes existing verified work easier for employers or buyers to understand. Keep it lean: a small number of evidence-backed case studies using problem -> constraints -> role -> implementation -> verification -> measured result or learning, plus resume/LinkedIn/GitHub/contact. Do not imply clients, scale, revenue, team size or ROI that is not evidenced. If the site starts competing with applications, customer discovery or paid delivery, stop polishing it.
